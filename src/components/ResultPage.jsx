@@ -28,7 +28,7 @@ export default function ResultPage({ variant, addTags, onContinue }) {
 // DESIGN_SPEC §5: slate-950 bg + radial glow, glassmorphism card, amber CTA
 function ResultA({ onContinue }) {
   return (
-    <div className="min-h-screen bg-slate-950 bg-[radial-gradient(circle_at_top,_var(--tw-gradient-stops))] from-indigo-500/30 via-slate-950 to-slate-950 flex flex-col items-center justify-center px-5 py-32">
+    <div className="min-h-screen bg-slate-950 bg-[radial-gradient(circle_at_top,_var(--tw-gradient-stops))] from-indigo-500/30 via-slate-950 to-slate-950 flex flex-col items-center justify-start px-5 pt-12 pb-16">
       <div className="w-full max-w-lg animate-fadeIn">
 
         {/* Premium badge — glassmorphism */}
@@ -86,7 +86,7 @@ function ResultA({ onContinue }) {
 // DESIGN_SPEC §6: clean white, info hierarchy, soft indigo primary, bordered secondary
 function ResultB({ onContinue }) {
   return (
-    <div className="min-h-screen bg-white flex flex-col items-center justify-center px-5 py-16">
+    <div className="min-h-screen bg-white flex flex-col items-center justify-start px-5 pt-12 pb-16">
       <div className="w-full max-w-lg animate-fadeIn">
 
         {/* Badge */}
@@ -137,7 +137,7 @@ function ResultB({ onContinue }) {
 // DESIGN_SPEC §7: emerald-50/20 tint, soft slate text, no urgency, maximum whitespace
 function ResultC({ onContinue }) {
   return (
-    <div className="min-h-screen bg-emerald-50/20 flex flex-col items-center justify-center px-5 py-24">
+    <div className="min-h-screen bg-emerald-50/20 flex flex-col items-center justify-start px-5 pt-12 pb-16">
       <div className="w-full max-w-lg animate-fadeIn">
 
         {/* Icon — ringed, soft (DESIGN_SPEC §7) */}

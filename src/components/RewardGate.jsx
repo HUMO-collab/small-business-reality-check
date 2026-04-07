@@ -110,7 +110,7 @@ export default function RewardGate({ onComplete }) {
 
           {/* Milestone icon — ring treatment (DESIGN_SPEC §3) */}
           <div className="flex justify-center mb-10">
-            <div className="flex items-center justify-center w-16 h-16 bg-white ring-8 ring-indigo-100/50 rounded-full shadow-lg scale-125">
+            <div className="flex items-center justify-center w-20 h-20 bg-white ring-8 ring-indigo-100/50 rounded-full shadow-lg">
               <span className="text-3xl">🎁</span>
             </div>
           </div>

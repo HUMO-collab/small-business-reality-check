@@ -26,7 +26,7 @@ export default function ThankYouPage({ user, surveyState }) {
 
         {/* Checkmark icon — ringed (DESIGN_SPEC §8) */}
         <div className="flex justify-center mb-8">
-          <div className="flex items-center justify-center w-20 h-20 bg-white ring-[12px] ring-emerald-50/80 rounded-full shadow-sm scale-125">
+          <div className="flex items-center justify-center w-24 h-24 bg-white ring-8 ring-emerald-50 rounded-full shadow-sm">
             <svg
               className="w-10 h-10 text-emerald-500"
               fill="none"
