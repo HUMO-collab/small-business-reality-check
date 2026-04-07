@@ -1,0 +1,75 @@
+# .clinerules — Claude Code Operational Rules
+# These rules govern how Claude Code behaves in every session.
+# They are non-negotiable and apply to all tasks on this project.
+
+---
+
+## SESSION BEHAVIOUR
+
+- Read CLAUDE.md fully before starting any task
+- Read BRIEF.md for the specific section relevant to the current task before writing code
+- Ask one clarifying question maximum before starting — if the task is clear, start immediately
+- Do not re-explain what you are about to do — just do it
+- Do not summarise completed work in chat — write it to PROGRESS.md instead
+- At the end of every session, update the Progress Log in CLAUDE.md and PROGRESS.md
+
+---
+
+## TASK DISCIPLINE
+
+- Work on exactly one feature or component per session
+- Do not refactor, rename, or reorganise files that are not part of the current task
+- Do not add features that were not asked for
+- Do not upgrade or change dependencies unless explicitly instructed
+- If a task requires changing shared state or the data model, note it in PROGRESS.md before proceeding
+
+---
+
+## CODE QUALITY
+
+- Always run the app after completing a task — check the browser and the console
+- Fix all console errors before marking a task done
+- Validate completed work against VALIDATION.md before ending the session
+- Write the minimum code needed to complete the task — no over-engineering
+- Keep components small and focused — one responsibility per file
+- Do not use inline styles if a Tailwind utility class exists for it
+
+---
+
+## COPY AND CONTENT RULES
+
+- Never alter, paraphrase, or simplify copy — use BRIEF.md as the source of truth
+- If copy is needed for a component, read BRIEF.md first and copy it exactly
+- Do not invent placeholder copy — if copy is not in BRIEF.md, ask before proceeding
+
+---
+
+## TOKEN CONSERVATION
+
+- Keep responses short: code output + file paths only
+- Do not explain code unless asked
+- Do not repeat back the task description
+- Reference files by path — do not paste file contents into chat
+- Use /clear between tasks — never carry old conversation context into a new task
+- Write decisions and notes to files, not chat
+
+---
+
+## FILE MANAGEMENT
+
+- All new files go in the correct directory as defined in CLAUDE.md section 3
+- Update PROGRESS.md at the end of every session with what was done and what is next
+- If a bug is found that is out of scope for the current task, log it in CLAUDE.md section 11 and continue
+- Do not delete files — comment out or deprecate instead
+
+---
+
+## WHAT NEVER TO DO
+
+- Never add authentication, payments, dashboards, or AI features
+- Never call external APIs (stub all CTAs with console.log for MVP)
+- Never use dropdowns for survey answer options — always buttons
+- Never show more than one question per screen
+- Never allow the user to bypass the gate screen
+- Never change the Q7 question text — it must include "just like this survey did"
+- Never create a new session without reading CLAUDE.md first
