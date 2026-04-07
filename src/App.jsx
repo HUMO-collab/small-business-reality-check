@@ -75,6 +75,7 @@ export default function App() {
     case 'q1':
       return (
         <QuestionScreen
+          key="q1"
           question={Q1}
           stepKey="q1"
           onAnswer={handleQ1}
@@ -85,6 +86,7 @@ export default function App() {
     case 'q2':
       return q2Config ? (
         <QuestionScreen
+          key="q2"
           question={q2Config}
           stepKey="q2"
           onAnswer={handleQ2}
@@ -95,6 +97,7 @@ export default function App() {
     case 'q3':
       return q3Config ? (
         <QuestionScreen
+          key="q3"
           question={q3Config}
           stepKey="q3"
           onAnswer={handleQ3}
@@ -108,6 +111,7 @@ export default function App() {
     case 'q4':
       return (
         <QuestionScreen
+          key="q4"
           question={Q4}
           stepKey="q4"
           onAnswer={handleQ4}
@@ -117,6 +121,7 @@ export default function App() {
     case 'q5':
       return (
         <QuestionScreen
+          key="q5"
           question={Q5}
           stepKey="q5"
           onAnswer={handleQ5}
@@ -126,6 +131,7 @@ export default function App() {
     case 'q6':
       return (
         <QuestionScreen
+          key="q6"
           question={Q6}
           stepKey="q6"
           onAnswer={handleQ6}
@@ -133,9 +139,9 @@ export default function App() {
       )
 
     case 'q7':
-      // Q7 must NOT auto-advance — give it a closing beat (BRIEF §10.2 + §10.4)
       return (
         <QuestionScreen
+          key="q7"
           question={Q7}
           stepKey="q7"
           onAnswer={handleQ7}
